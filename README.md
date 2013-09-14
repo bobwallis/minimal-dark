@@ -10,6 +10,16 @@ To use, copy the refind folder nto `minimal-dark` into your rEFInd EFI folder (u
 
 You might want to add some more icons into the `icons` folder if you use different OSs to me.
 
+If you want to use the `use_graphics_for` option then the flash through grey is less than ideal. To fix:
+
+1. Download the PKGBUILD and other files from `https://projects.archlinux.org/svntogit/packages.git/tree/trunk?h=packages/refind-efi`.
+2. Run `makepkg -o` to download and extract the source files.
+3. Open `src/refind-0.7.4/refind/screen.c`
+4. Replace: `EG_PIXEL StdBackgroundPixel  = { 0xbf, 0xbf, 0xbf, 0 };` on line 69 with `EG_PIXEL StdBackgroundPixel  = { 0x0, 0x0, 0x0, 0 };`.
+5. Run `makepkg -esi` to build and install.
+6. Run `sudo refind-install` to copy the new rEFInd binaries to `/boot/efi/EFI/refind`.
+
+
 Plymouth
 -------------------------
 Made by modifying the [Arch Logo](http://karlinux.deviantart.com/art/Arch-Logo-Plymouth-Theme-209553250) theme, which in turn is based on debian-logo.
