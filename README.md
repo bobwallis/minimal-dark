@@ -1,6 +1,6 @@
 minimal-dark
 ============
-Minimal, dark, Arch Linux themes for rEFInd and Plymouth.
+Minimal, dark, Arch Linux themes for rEFInd, Plymouth and SLiM.
 
 rEFInd
 -------------------------
@@ -23,3 +23,13 @@ If you want to use the `use_graphics_for` option then the flash through grey is 
 Plymouth
 -------------------------
 Made by modifying the [Arch Logo](http://karlinux.deviantart.com/art/Arch-Logo-Plymouth-Theme-209553250) theme, which in turn is based on debian-logo.
+
+Copy into `/usr/share/plymouth/themes/minimal-dark` and set the `minimal-dark` as the theme in
+`/etc/plymouth/plymouthd.conf`.
+
+SLiM
+-------------------------
+If you're vertical screen resolution isn't 768px then the `session_y` and `msg_y` config options
+will need adjusting.
+
+Copy into `/usr/share/slim/themes/minimal-dark` and set `minimal-dark` as the theme in `/etc/slim.conf`.

@@ -1,0 +1,44 @@
+# Minimal Dark SLiM Theme
+
+# valid values: stretch, tile
+background_style       tile
+background_color       #000000
+
+# input box controls
+input_font             Ubuntu:size=8:bold:dpi=96
+input_fgcolor          #000000
+# panel location
+input_panel_x          50%
+input_panel_y          50%
+input_name_x           55
+input_name_y           194
+input_pass_x           -1
+input_pass_y           -1
+
+# username / password request (actual text)
+username_font          Ubuntu:size=8:bold:dpi=96
+username_color         #f0f0f0
+username_x             50
+username_y             170
+password_x             50
+password_y             170
+username_msg           Username
+password_msg           Password
+
+# messages (ie: shutdown)
+msg_x                  50%
+msg_y                  520
+msg_font               Ubuntu:size=8:bold:dpi=96
+msg_color              #f0f0f0
+
+# welcome message
+welcome_x              50%
+welcome_y              125
+welcome_font           Ubuntu:size=8:bold:dpi=96
+welcome_color          #f0f0f0
+
+# session message
+session_x              50%
+session_y              500
+session_font           Ubuntu:size=8:bold:dpi=96
+session_color          #666666
