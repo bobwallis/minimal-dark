@@ -29,7 +29,13 @@ Copy into `/usr/share/plymouth/themes/minimal-dark` and set the `minimal-dark` a
 
 SLiM
 -------------------------
+I don't use this one so it might not work any more.
+
 If you're vertical screen resolution isn't 768px then the `session_y` and `msg_y` config options
 will need adjusting.
 
 Copy into `/usr/share/slim/themes/minimal-dark` and set `minimal-dark` as the theme in `/etc/slim.conf`.
+
+GDM
+-------------------------
+Build, then copy the resulting `gnome-shell-theme.gresource` to `/usr/share/gnome-shell` and restart GDM.

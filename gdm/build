@@ -1,0 +1,7 @@
+#!/bin/bash
+
+cp gnome-shell-theme.gresource.xml ./theme
+cd theme
+glib-compile-resources gnome-shell-theme.gresource.xml
+mv gnome-shell-theme.gresource ../
+rm gnome-shell-theme.gresource.xml
